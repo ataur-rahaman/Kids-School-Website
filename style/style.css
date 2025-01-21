@@ -224,7 +224,7 @@ header{
         text-align: center;
     }
     .hero-btn{
-        font-size: 1.25rem;
+        font-size: 1rem;
         text-align: center;
         border-radius: 8px;
         padding: 6px 24px;
@@ -487,3 +487,49 @@ header{
 }
 
 /* stories section related styles end */
+
+/* responsive styles for stories section */
+@media screen and (max-width:576px) {
+    .left-card-cont{
+        display: none;
+    }
+    .right-card-cont{
+        gap: 11px;
+    }
+    .stories-title{
+        font-size: 1.6rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .stories-right-card{
+        border-radius: 9.53px;
+    }
+    .right-card-img{
+        border-radius: 9.53px 9.53px 0px 0px;
+    }
+    .stories-card-date-btn{
+        font-size: 0.57rem;
+        padding: 5px 10px;
+        border-radius: 28.54px; 
+    }
+    .right-card-text-cont{
+        padding: 0px 20px;
+    }
+    .stories-right-card-description{
+        font-size: 0.57rem;
+        line-height: 17.1px;
+        margin-bottom: 10px;
+    }
+    .stories-cards-cont{
+        padding: 0px 16px 20px;
+    }
+    .stories-container{
+        padding-bottom: 40px;
+    }
+    .stories-btn{
+        font-size: 1rem;
+        border-radius: 12px;
+        padding: 5px 37px;
+    }
+}
+/* responsive styles for stories section */
