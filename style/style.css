@@ -488,7 +488,7 @@ header{
 
 /* stories section related styles end */
 
-/* responsive styles for stories section */
+/* responsive styles for stories section start */
 @media screen and (max-width:576px) {
     .left-card-cont{
         display: none;
@@ -532,4 +532,124 @@ header{
         padding: 5px 37px;
     }
 }
-/* responsive styles for stories section */
+/* responsive styles for stories section end */
+
+/* footer related styles start */
+footer{
+    background-color: rgba(1, 172, 253, 1);
+    padding: 123px 0px 174px 0px;
+}
+.footer-section{
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 150px;
+}
+.footer-left-up{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.footer-logo{
+    width: 83px;
+    height: 82px;
+    padding-bottom: 5px;
+}
+.footer-title{
+    font-family: Quicksand;
+    font-weight: 700;
+    font-size: 2.63rem;
+    color: rgba(255, 255, 255, 1);
+    line-height: 39.5px;
+}
+.footer-description{
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    margin-top: 35px;
+    padding-left: 10px;
+}
+.footer-middle-title{
+    font-family: Quicksand;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    margin-bottom: 32px;
+}
+.footer-middle-link-list{
+    margin-bottom: 20px;
+    list-style: none;
+}
+.footer-middle-link{
+    text-decoration: none;
+    font-family: Quicksand;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+}
+.footer-right-title{
+    font-family: Quicksand;
+    font-weight: 700;
+    font-size: 1.62rem;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    margin-bottom: 32px;
+}
+.footer-right-icon-cont{
+    display: flex;
+    gap: 10px;
+}
+.footer-right-icon{
+    cursor: pointer;
+}
+/* footer related styles end */
+/* responsive styles for footer section start */
+@media screen and (max-width:576px) {
+    footer{
+        padding: 65px 20px 60px 20px;
+    }
+    .footer-section{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .footer-title{
+        font-family: Quicksand;
+        font-weight: 700;
+        font-size: 2.21rem;
+        color: rgba(255, 255, 255, 1);
+        line-height: 33.5px;
+    }
+    .footer-description{
+        font-size: 1rem;
+        margin-top: 22px;
+        padding-left: 0px;
+    }
+    .footer-logo{
+        margin-left: -10px;
+    }
+    .footer-middle-title{
+        font-weight: 600;
+        font-size: 1.27rem;
+        margin-bottom: 27px;
+    }
+    .footer-middle-link-list{
+        margin-bottom: 17px;
+    }
+    .footer-middle-link{
+        font-size: 1.25rem;
+    }
+    .footer-right-title{
+        font-size: 1.37rem;
+        margin-bottom: 36px;
+    }
+    .footer-right-icon-cont{
+        gap: 9px;
+    }
+}
+/* responsive styles for footer section end */
