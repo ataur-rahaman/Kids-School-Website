@@ -147,6 +147,28 @@ header{
         font-size: 1.6rem;
     }
 }
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .navbar{
+        padding: 12px 16px;
+    }
+    .site-logo-name, .nav-links-cont, .nav-btn-cont{
+        display: none;
+    }
+    .site-logo-cont{
+        width: 46px;
+        height: 46px;
+    }
+    .site-logo-cont> .site-logo{
+        width: 100%;
+    }
+    .hamburger-icon{
+        display: block;
+    } 
+    .ham-icon{
+        font-size: 1.6rem;
+    }
+}
 /* navbar responsive styles for small devices end */
 
 /* hero section related styles start */
@@ -222,6 +244,38 @@ header{
     }
     .hero-btn-cont{
         text-align: center;
+    }
+    .hero-btn{
+        font-size: 1rem;
+        text-align: center;
+        border-radius: 8px;
+        padding: 6px 24px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .hero{
+        flex-direction: column-reverse;
+        margin: 20px 20px 0px;
+        gap: 20px;
+    } 
+    .hero-img{
+        width: 100%;
+    }
+    .hero-title{
+        font-size: 2.3rem;
+        text-align: left;
+        line-height: 40px;
+        margin-bottom: 18px;
+    }
+    .hero-description{
+        font-size: 0.87rem;
+        text-align: left;
+        margin-bottom: 18px;  
+    }
+    .hero-btn-cont{
+        text-align: left;
     }
     .hero-btn{
         font-size: 1rem;
@@ -366,6 +420,10 @@ header{
         flex-direction: column;
         gap: 12px;
     }
+    .card:hover{
+        transform: translate(0px, 0px);
+        transition: 0s;
+    }
     .arrow-cont{
         display: none;
     }
@@ -382,6 +440,50 @@ header{
     .card{
         border-radius: 12.77px;
         padding: 36px 80px;
+        gap: 22px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .curriculum-section{
+        background-position: top right;
+        background-size: cover;
+    }
+    .curriculum-container{
+        padding: 0px 16px 10px;
+        gap: 20px;
+    }
+    .curriculum-title{
+        font-size: 1.6rem;
+        margin-top: 40px;
+    }
+    .curriculum-cards-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+    .card:hover{
+        transform: translate(0px, 0px);
+        transition: 0s;
+    }
+    .arrow-cont{
+        display: none;
+    }
+    .curriculum-card-title{
+        font-size: 1.1rem;
+    }
+    .curriculum-card-description{
+        width: 230px;
+        font-size: 0.75rem;
+        line-height: 19.2px;
+    }
+    .curriculum-card-link{
+        font-size: 0.68rem;
+    }
+    .card{
+        border-radius: 12.77px;
+        padding: 10px 10px;
         gap: 22px;
     }
 }
@@ -416,7 +518,7 @@ header{
    padding-bottom: 80px;
 }
 .left-card-cont{
-    max-width: 540px;
+    max-width: 595px;
     border-radius: 16px;
     background-color: rgba(255, 255, 255, 1);
 
@@ -532,6 +634,52 @@ header{
         padding: 5px 37px;
     }
 }
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .left-card-cont{
+        display: none;
+    }
+    .right-card-cont{
+        gap: 11px;
+    }
+    .stories-title{
+        font-size: 1.7rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .stories-right-card{
+        border-radius: 9.53px;
+    }
+    .right-card-img{
+        border-radius: 9.53px 9.53px 0px 0px;
+    }
+    .stories-card-date-btn{
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        border-radius: 28.54px; 
+    }
+    .right-card-text-cont{
+        padding: 0px 20px;
+    }
+    .stories-right-card-description{
+        font-size: 1rem;
+        line-height: 17.1px;
+        margin-bottom: 10px;
+    }
+    .stories-cards-cont{
+        align-content: center;
+        justify-content: center;
+        padding: 0px 16px 20px;
+    }
+    .stories-container{
+        padding-bottom: 40px;
+    }
+    .stories-btn{
+        font-size: 1rem;
+        border-radius: 12px;
+        padding: 5px 37px;
+    }
+}
 /* responsive styles for stories section end */
 
 /* footer related styles start */
@@ -608,6 +756,21 @@ footer{
 .footer-right-icon{
     cursor: pointer;
 }
+
+.marquee-text{
+    font-family: Quicksand;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #ffff;
+    
+}
+marquee{
+    background-color: rgba(1, 172, 253, 1);
+    padding: 10px 0px;
+    position: fixed;
+    bottom: 0;
+    border-radius: 20px 20px 0px 0px;
+}
 /* footer related styles end */
 /* responsive styles for footer section start */
 @media screen and (max-width:576px) {
@@ -651,5 +814,102 @@ footer{
     .footer-right-icon-cont{
         gap: 9px;
     }
+    .marquee-text{
+        font-family: Quicksand;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #ffff;
+        
+    }
+    marquee{
+        background-color: rgba(1, 172, 253, 0.6);
+        padding: 5px 0px;
+        position: fixed;
+        bottom: 0;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+    footer{
+        padding: 30px 20px 60px 20px;
+    }
+    .footer-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        gap: 32px;
+    }
+    .footer-title{
+        font-family: Quicksand;
+        font-weight: 700;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 1);
+        line-height: 33.5px;
+    }
+    .footer-description{
+        font-size: 0.95rem;
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+    .footer-logo{
+        margin-left: -10px;
+    }
+    .footer-middle-title{
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 27px;
+        text-align: right;
+    }
+    .footer-middle-link-list{
+        margin-bottom: 17px;
+    }
+    .footer-middle-link{
+        font-size: 1rem;
+    }
+    .footer-middle-column{
+        text-align: right;
+    }
+    .footer-right-title{
+        font-size: 1.1rem;
+        margin-bottom: 36px;
+    }
+    .footer-right-icon-cont{
+        gap: 9px;
+    }
+    .marquee-text{
+        font-family: Quicksand;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #ffff;
+        
+    }
+    marquee{
+        background-color: rgba(1, 172, 253, 0.6);
+        padding: 5px 0px;
+        position: fixed;
+        bottom: 0;
+        border-radius: 10px 10px 0px 0px;
+    }
 }
 /* responsive styles for footer section end */
+
+@media screen and (min-width:992px) and (max-width: 1180px) {
+    .navbar, .hero, .curriculum-section, .stories-section, footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .right-card-text-cont {
+        padding: 0px 10px;
+    }
+    .stories-card-date-btn {
+        font-family: Raleway;
+        font-weight: 500;
+        font-size: 0.7rem;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 10px 18px;
+        border-radius: 48px;
+        background-color: rgba(149, 178, 38, 1);
+    }
+}
